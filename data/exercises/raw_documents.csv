@@ -1,0 +1,11 @@
+id,name,content
+1,policy.md,知识库重复导入按正文哈希去重
+2,faq.md,接口测试需要检查空输入
+2,faq_copy.md,这是重复编号的另一条记录
+3,,没有文档名的记录
+4,empty.md,
+,unknown.md,没有编号的记录
+5,tool.exe,错误的文件格式
+6,limits.txt,单份上传上限为2MiB
+7,source.md,每个切片需要记录来源行号
+8,privacy.md,模型调用会发送检索到的资料

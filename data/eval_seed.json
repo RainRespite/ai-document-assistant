@@ -1,0 +1,16 @@
+[
+  {"question":"重复导入文档如何处理？","expected_source":"policy.md","kind":"direct"},
+  {"question":"文档编码和单份上传大小限制？","expected_source":"policy.md","kind":"direct"},
+  {"question":"知识库删除会删除切片吗？","expected_source":"policy.md","kind":"direct"},
+  {"question":"TestClient接口测试重点是什么？","expected_source":"faq.md","kind":"direct"},
+  {"question":"TF-IDF和语义Embedding有什么不同？","expected_source":"faq.md","kind":"direct"},
+  {"question":"词法检索为什么失败？","expected_source":"faq.md","kind":"direct"},
+  {"question":"同样内容再传一次会怎样？","expected_source":"policy.md","kind":"paraphrase"},
+  {"question":"能不能让很多用户一起使用？","expected_source":"policy.md","kind":"paraphrase"},
+  {"question":"火星公转周期？","expected_source":null,"kind":"out_of_scope"},
+  {"question":"南京地铁票价多少？","expected_source":null,"kind":"out_of_scope"},
+  {"question":"文档上传服务每年收费多少？","expected_source":null,"kind":"hard_negative"},
+  {"question":"数据删除后的备份保留多少天？","expected_source":null,"kind":"hard_negative"},
+  {"question":"模型公司的客服电话是多少？","expected_source":null,"kind":"hard_negative"},
+  {"question":"并发接口测试支持多少用户？","expected_source":null,"kind":"hard_negative"}
+]
