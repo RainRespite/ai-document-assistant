@@ -81,6 +81,22 @@ def create_app(db_path=None):
     @app.get("/history")
     def history():
         return store.history()
+    '''现在你需要在 stats() 中完成：
+1. 使用 store.documents() 获取文档列表。
+2. 使用 store.chunks() 获取文本块列表。
+3. 使用 len() 统计数量。
+4. 遍历文档，提取每个文档的 name。
+5. 返回包含 document_count、chunk_count、filenames 的字典'''
+    @app.get("/stats")
+    def stats():
+        documents = store.documents()
+        chunks = store.chunks()
+        document_count = len(documents)
+        chunk_count = len(chunks)
+        # 列表推导式遍历文档列表，提取每个文档字典中的 name 字段，汇总为文件名列表
+        filenames = [document["name"] for document in documents]
+        # 返回统计结果：文档总数、文本块总数以及所有文档的文件名列表
+        return {"document_count": document_count, "chunk_count": chunk_count, "filenames": filenames}
 
     return app
 
