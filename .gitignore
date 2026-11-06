@@ -5,3 +5,14 @@ __pycache__/
 *.sqlite3
 *.sqlite3-*
 reports/
+# macOS 系统文件
+.DS_Store
+
+# PyCharm 本地配置
+.idea/
+
+# Python 编译文件
+*.pyc
+
+# Day 3 自动生成的临时预览
+exercises/day3/id_2_preview.csv
